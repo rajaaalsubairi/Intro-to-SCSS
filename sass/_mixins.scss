@@ -1,4 +1,4 @@
-@mixin anim($opacity,$translate){ 
-     opacity: $opacity;
+@mixin anim ($opacity,$translate) { 
+    opacity: $opacity;
     transform: translateX($translate);
 }

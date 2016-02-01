@@ -52,19 +52,19 @@ i{
 @keyframes rain {
        
     0% {
-        @inlcude anim(1,0);
+        @include anim(1,0);
     }
     
     25% {
-       @inlcude anim(1,0);
+       @include anim(1,0);
     }
     
     50% {
-        @inlcude anim(0,500px);
+        @include anim(0,500px);
     }
     
     100% {
-         @inlcude anim(0,500px);
+         @include anim(0,500px);
     }
     
 }
@@ -77,27 +77,27 @@ i{
 @keyframes cloud {
        
     0% {
-        @inlcude anim(1,0);
+        @include anim(1,0);
     }
     
     25% {
-        @inlcude anim(1,0);
+        @include anim(1,0);
     }
     
     45% {
-        @inlcude anim(1,0);
+        @include anim(1,0);
     }
     
     50% {
-         @inlcude anim(1,0);
+         @include anim(1,0);
     }
     
     75% {
-        @inlcude anim(0,500px);
+        @include anim(0,500px);
     }
     
     100% {
-       @inlcude anim(0,500px);
+       @include anim(0,500px);
     }
     
 }
