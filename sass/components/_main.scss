@@ -1,0 +1,156 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+	box-sizing: border-box;
+
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+     overflow-x: hidden;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+
+}
+
+body {
+    margin: 0;
+}
+
+
+
+.bg {
+   background-image:  url("http://cdn.linuxaria.com/wp-content/uploads/2011/04/a_day_in_the_life_by_barid42-d3dzbcc1.jpg");
+    background-position: $center $center;
+    background-repeat: no-repeat;
+    background-size: $cover;
+    height: 100vh;
+    width: $width;
+}
+        
+i{
+    font-size: $fontsize;
+    position: absolute;
+    top: .5em;
+    left: 0;
+    vertical-align: $center;
+    width: $width;
+    text-align: $center;
+}
+
+.icon-rain {
+    color: $primary;
+    animation: rain 5s linear infinite;
+    -webkit-animation: rain 5s linear infinite;
+}
+
+@keyframes rain {
+       
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+    25% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+    50% {
+        transform: translateX(500px);
+        opacity: 0;
+    }
+    
+    100% {
+        transform: translateX(500px);
+        opacity: 0;
+    }
+    
+}
+
+.icon-cloud {
+    color: $primary;
+    animation: cloud 5s linear infinite;
+    -webkit-animation: cloud 5s linear infinite;
+}
+
+@keyframes cloud {
+       
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+    25% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+    45% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+    50% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+    75% {
+        transform: translateX(500px);
+        opacity: 0;
+    }
+    
+    100% {
+        transform: translateX(500px);
+        opacity: 0;
+    }
+    
+}
+
+
+.icon-sun {
+    color: $primary;
+    animation: sun 5s linear infinite;
+    -webkit-animation: sun 5s linear infinite;
+}
+
+@keyframes sun {
+       
+    0% {
+        opacity: 0;
+    }
+    
+    25% {
+        opacity: 0;
+    }
+
+    
+    50% {
+        opacity: 0;
+    }
+    
+    85% {
+        opacity: 1;
+    }
+    
+    100% {
+        opacity: 1;
+    }
+    
+}
+
+
+@media only screen and (min-width:38em) {
+    
+    i {
+        font-size: $bigfont;
+    }
+  
+}
