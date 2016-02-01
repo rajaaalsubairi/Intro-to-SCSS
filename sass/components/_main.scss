@@ -47,29 +47,24 @@ i{
 .icon-rain {
     color: $primary;
     animation: rain 5s linear infinite;
-    -webkit-animation: rain 5s linear infinite;
 }
 
 @keyframes rain {
        
     0% {
-        transform: translateX(0);
-        opacity: 1;
+        @inlcude anim(1,0);
     }
     
     25% {
-        transform: translateX(0);
-        opacity: 1;
+       @inlcude anim(1,0);
     }
     
     50% {
-        transform: translateX(500px);
-        opacity: 0;
+        @inlcude anim(0,500px);
     }
     
     100% {
-        transform: translateX(500px);
-        opacity: 0;
+         @inlcude anim(0,500px);
     }
     
 }
@@ -77,48 +72,39 @@ i{
 .icon-cloud {
     color: $primary;
     animation: cloud 5s linear infinite;
-    -webkit-animation: cloud 5s linear infinite;
 }
 
 @keyframes cloud {
        
     0% {
-        transform: translateX(0);
-        opacity: 1;
+        @inlcude anim(1,0);
     }
     
     25% {
-        transform: translateX(0);
-        opacity: 1;
+        @inlcude anim(1,0);
     }
     
     45% {
-        transform: translateX(0);
-        opacity: 1;
+        @inlcude anim(1,0);
     }
     
     50% {
-        transform: translateX(0);
-        opacity: 1;
+         @inlcude anim(1,0);
     }
     
     75% {
-        transform: translateX(500px);
-        opacity: 0;
+        @inlcude anim(0,500px);
     }
     
     100% {
-        transform: translateX(500px);
-        opacity: 0;
+       @inlcude anim(0,500px);
     }
     
 }
 
-
 .icon-sun {
     color: $primary;
     animation: sun 5s linear infinite;
-    -webkit-animation: sun 5s linear infinite;
 }
 
 @keyframes sun {

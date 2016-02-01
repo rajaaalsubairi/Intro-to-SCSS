@@ -8,11 +8,6 @@
   scale: 1;
 }
 
-@-o-viewport {
-  width: device-width;
-  scale: 1;
-}
-
 @-webkit-viewport {
   width: device-width;
   scale: 1;
@@ -25,7 +20,6 @@
 
 html {
   box-sizing: border-box;
-  -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
@@ -61,66 +55,110 @@ i {
 
 .icon-rain {
   color: white;
-  animation: rain 5s linear infinite;
   -webkit-animation: rain 5s linear infinite;
+          animation: rain 5s linear infinite;
+}
+
+@-webkit-keyframes rain {
+  0% {
+    @inlcude anim(1, 0);
+  }
+  25% {
+    @inlcude anim(1, 0);
+  }
+  50% {
+    @inlcude anim(0, 500px);
+  }
+  100% {
+    @inlcude anim(0, 500px);
+  }
 }
 
 @keyframes rain {
   0% {
-    transform: translateX(0);
-    opacity: 1;
+    @inlcude anim(1, 0);
   }
   25% {
-    transform: translateX(0);
-    opacity: 1;
+    @inlcude anim(1, 0);
   }
   50% {
-    transform: translateX(500px);
-    opacity: 0;
+    @inlcude anim(0, 500px);
   }
   100% {
-    transform: translateX(500px);
-    opacity: 0;
+    @inlcude anim(0, 500px);
   }
 }
 
 .icon-cloud {
   color: white;
-  animation: cloud 5s linear infinite;
   -webkit-animation: cloud 5s linear infinite;
+          animation: cloud 5s linear infinite;
+}
+
+@-webkit-keyframes cloud {
+  0% {
+    @inlcude anim(1, 0);
+  }
+  25% {
+    @inlcude anim(1, 0);
+  }
+  45% {
+    @inlcude anim(1, 0);
+  }
+  50% {
+    @inlcude anim(1, 0);
+  }
+  75% {
+    @inlcude anim(0, 500px);
+  }
+  100% {
+    @inlcude anim(0, 500px);
+  }
 }
 
 @keyframes cloud {
   0% {
-    transform: translateX(0);
-    opacity: 1;
+    @inlcude anim(1, 0);
   }
   25% {
-    transform: translateX(0);
-    opacity: 1;
+    @inlcude anim(1, 0);
   }
   45% {
-    transform: translateX(0);
-    opacity: 1;
+    @inlcude anim(1, 0);
   }
   50% {
-    transform: translateX(0);
-    opacity: 1;
+    @inlcude anim(1, 0);
   }
   75% {
-    transform: translateX(500px);
-    opacity: 0;
+    @inlcude anim(0, 500px);
   }
   100% {
-    transform: translateX(500px);
-    opacity: 0;
+    @inlcude anim(0, 500px);
   }
 }
 
 .icon-sun {
   color: white;
-  animation: sun 5s linear infinite;
   -webkit-animation: sun 5s linear infinite;
+          animation: sun 5s linear infinite;
+}
+
+@-webkit-keyframes sun {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes sun {
